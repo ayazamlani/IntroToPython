@@ -9,9 +9,14 @@ parameters = {
     'limit': '10',
     'convert': 'USD'
 }
+
+with open('x.json', 'r') as f:
+    data = json.loads(f.read())
+
+
 headers = {
     'Accepts': 'application/json',
-    'X-CMC_PRO_API_KEY': '33bfdaf8-a8e0-4d1a-8b01-e772da0295d0',
+    'X-CMC_PRO_API_KEY': data['X-CMC_PRO_API_KEY'],
 }
 
 session = Session()
