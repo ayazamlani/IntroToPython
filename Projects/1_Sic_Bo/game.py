@@ -1,22 +1,5 @@
 import random
 
-
-GUESS_VERIFIED = False
-while not GUESS_VERIFIED:
-    GUESS = input('Guess a Number between 4-17:\n\t++')
-    try:
-        GUESS = int(GUESS)
-        if GUESS < 4:
-            print('Number too low')
-        elif GUESS > 17:
-            print('Number too high')
-        else:
-            GUESS_VERIFIED = True
-
-    except Exception as e:
-        print(f'{e}\nTry Entering a number not words...')
-
-
 # Create the Dice
 DICE_1 = random.randint(1, 6)
 DICE_2 = random.randint(1, 6)
@@ -63,19 +46,35 @@ DICE #3: {DICE_3}\n\t\
 ')
 
 
-def win():
-    print('YOU WIN')
-    print('YOU WIN')
-    print('YOU WIN')
-    print('YOU WIN')
-    print('YOU WIN')
-    print('YOU WIN')
+# GUESS_VERIFIED = False
+# while not GUESS_VERIFIED:
+#     GUESS = input('Guess a Number between 4-17:\n\t++')
+#     try:
+#         GUESS = int(GUESS)
+#         if GUESS < 4:
+#             print('Number too low')
+#         elif GUESS > 17:
+#             print('Number too high')
+#         else:
+#             GUESS_VERIFIED = True
+#
+#     except Exception as e:
+#         print(f'{e}\nTry Entering a number not words...')
 
 
-if int(GUESS) == DICE_SUM:
-    print('YOU WIN')
-    print('YOU WIN')
-    print('YOU WIN')
-    print('YOU WIN')
-    print('YOU WIN')
-    print('YOU WIN')
+# def win():
+#     print('YOU WIN')
+#     print('YOU WIN')
+#     print('YOU WIN')
+#     print('YOU WIN')
+#     print('YOU WIN')
+#     print('YOU WIN')
+#
+#
+# if int(GUESS) == DICE_SUM:
+#     print('YOU WIN')
+#     print('YOU WIN')
+#     print('YOU WIN')
+#     print('YOU WIN')
+#     print('YOU WIN')
+#     print('YOU WIN')
