@@ -1,0 +1,18 @@
+{
+  "students": [{
+      "name": "Francesca",
+      "age": "40",
+      "qr": "img/qr-francesca.jpg"
+    },
+    {
+      "name": "Eddie",
+      "age": "33",
+      "qr": "img/qr-eddie.jpg"
+    },
+    {
+      "name": "James",
+      "age": "30",
+      "qr": "img/qr-james.jpg"
+    }
+  ]
+}
